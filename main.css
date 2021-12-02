@@ -1,0 +1,138 @@
+    @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+    h2 {font-family: 'Raleway', sans-serif;}
+
+    html {
+        background-image: url(../assets/picture.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+      BODY {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(255, 255, 255);
+        font-family: Georgia;
+      }
+      H2 {
+        font-size: 25px;
+        font-weight: normal;
+        cursor: pointer;
+        overflow: hidden;
+        text-shadow: 0 0 rgb(0, 0, 0),
+                     0 0 rgb(230, 129, 15),
+                     0 0 rgb(241, 226, 12);
+        color: transparent;
+        transition: all 1s;
+        }
+        H2:hover {
+          text-shadow: -400px 0 rgb(0, 0, 0),
+                       400px 0 rgb(207, 106, 12),
+                       0 0 rgb(241, 227, 19);
+          }
+    
+    .container {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding-left: 800px;
+        padding-right: 15px;
+        color:rgb(248, 247, 241);
+        top: -100px;
+    }
+    
+    .poetry {
+        display: grid;
+        gap: 50px;
+    }
+
+    .poetry-lines {
+        position: absolute;
+        border: 3px solid rgb(51, 47, 11);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .poetry-lines_author {
+        position: absolute;
+        display: flex;
+        align-items: center;
+    }
+
+    .poetry-lines_title {
+        position: absolute;
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 0;
+        color:rgb(248, 247, 241);
+        text-align: center;
+        z-index: 999;
+    }
+
+    .poetry-lines_lines {
+        position: absolute;
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 0;
+        color:rgb(243, 233, 229);
+    }
+
+    .placeholder-form {
+        position: absolute;
+        box-sizing: border-box;
+        width: 320px;
+        margin: 20px auto;
+    }
+    .placeholder-container {
+        position: absolute;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .placeholder-container input {
+        position: absolute;
+        background-color: #FFF;
+        border: 2px solid #faf8f6;
+        box-sizing: border-box;
+        color: rgb(121, 101, 84);
+        font-size: 16px;
+        line-height: 16px; 
+        height: 50px;
+        outline: 0;
+        padding: 0 20px;
+        width: 100%;
+    }
+    .placeholder-container label {
+        color: rgb(255, 255, 255);
+        font-family: 'Raleway', sans-serif;  
+        background-color: #FFF;
+        font-size: 16px;
+        line-height: 16px;
+        padding: 5px 10px;
+        pointer-events: none;
+        position: absolute;
+        transition: all 200ms;
+        top: 12px;
+        left: 10px;
+        background-color: rgb(5, 5, 5);
+    }
+    .placeholder-container input:focus + label,
+    .placeholder-container input:not(:placeholder-shown) + label{
+        top: -10px;
+        left: 10px;
+        font-size: 11px;
+        background-color: #bd6e07;
+        padding: 3px 15px;
+        position: absolute;
+    }
+
+      
+
+
+    
